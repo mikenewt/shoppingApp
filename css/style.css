@@ -1,0 +1,102 @@
+html, body {
+	background-color: #a4dfff;
+	height: 100%;
+}
+
+.head, .need, .done {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.app {
+	height: 200px;
+	padding-top: 50px;
+}
+
+.head {
+	width: 100%;
+	text-align: center;
+}
+
+.head h1 {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.head p {
+	margin-top: 10px;
+}
+
+.main {
+	border: solid 1px black;
+	position: relative;
+	margin: 0px auto;
+	width: 400px;
+	margin-top: 35px;
+}
+
+.top-content {
+	width: 100%;
+	text-align: left;
+}
+
+.shopping-list div {
+	margin-top: 5px;
+}
+
+.need {
+	background-color: #F9FFFB;
+	color: #7D7F7E;
+	border: solid 2px gray;
+	border-radius: 5px;
+	line-height: 30px;
+	padding: 5px 0px 5px 30px;
+}
+
+.done {
+	background-color: #ADFFCC;
+	color: #567F66;
+	font-style: italic;
+	border: solid 2px gray;
+	border-radius: 5px;
+	line-height: 30px;
+	padding: 5px 0px 5px 30px;
+}
+
+.options {
+	float: right;
+	height: 30px;
+	width: 90px;
+	margin-right: 15px;
+	padding-top: 10px;
+}
+
+.edit, .check, .delete {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-right: 10px;
+}
+
+.edit {
+	background-image: url('../images/pencil.png');
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+}
+
+.check {
+	background-image: url('../images/checkmark.png');
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+}
+
+.delete {
+	background-image: url('../images/remove2.png');
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+}
