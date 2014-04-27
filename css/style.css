@@ -3,7 +3,7 @@ html, body {
 	height: 100%;
 }
 
-.head, .need, .done {
+.head, .need, .done, .bottom-content {
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -33,7 +33,6 @@ html, body {
 }
 
 .main {
-	border: solid 1px black;
 	position: relative;
 	margin: 0px auto;
 	width: 400px;
@@ -81,22 +80,80 @@ html, body {
 	width: 16px;
 	height: 16px;
 	padding-right: 10px;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
 }
 
 .edit {
 	background-image: url('../images/pencil.png');
-	background-repeat: no-repeat;
-	background-size: 16px 16px;
 }
 
 .check {
 	background-image: url('../images/checkmark.png');
-	background-repeat: no-repeat;
-	background-size: 16px 16px;
 }
 
 .delete {
 	background-image: url('../images/remove2.png');
+}
+
+.bottom-content {
+	margin-top: 20px;
+}
+
+.bottom-content p {
+	display: inline-block;
+}
+
+.export, .send {
+	/*border: solid 1px black;*/
+	display: inline-block;
+	width: 170px;
+	height: 30px;
+	margin: 0px 10px 0 10px;
+}
+
+.export {
+	margin-left: 15px;
+}
+
+.pdf, .excel, .text, .word, .facebook, .twitter, .gplus, .email {
+	display: inline-block;
 	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
 	background-size: 16px 16px;
+	padding-right: 5px;
+}
+
+.pdf {
+	background-image: url('../images/file-pdf.png');
+	margin-left: 5px;
+}
+
+.excel {
+	background-image: url('../images/file-excel.png');
+}
+
+.word {
+	background-image: url('../images/file-word.png');
+}
+
+.text {
+	background-image: url('../images/file.png');
+}
+
+.facebook {
+	background-image: url('../images/facebook.png');
+}
+
+.twitter {
+	background-image: url('../images/twitter.png');
+}
+
+.gplus {
+	background-image: url('../images/google-plus.png');
+}
+
+.email {
+	background-image: url('../images/mail2.png');
 }
