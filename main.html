@@ -4,7 +4,8 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js" type="text/javascript"></script>
 	<meta charset="UTF-8">
 	<title>Shopping Buddy</title>
 </head>
@@ -19,17 +20,14 @@
 			<div class="main">
 				<div class="top-content">
 					<div class="item-entry">
-						<input id="add-items" type="text" placeholder="What do you want to add to your list?">
+						<input id="add-items" type="text" placeholder="Click here and start typing. Press enter to add your item.">
                         <div class="shopping-list">
-                            <div class="need">Milk</div>
-                            <div class="need">Oranges</div>
                             <div class="options"><!--mousedown to trigger event(done, delete, edit), default=hidden-->
                             	<div class="edit"></div>
                             	<div class="check"></div>
                             	<div class="delete"></div>
                             </div>
-                            <div class="need">Broccoli</div>
-                            <div class="need">I need _________</div> <!--keyup keydown events (enter key) which appends (reference CodeSchool vids) new div-->
+ 
                         </div>
                     </div>
 				</div>

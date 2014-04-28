@@ -1,3 +1,9 @@
 $(document).ready(function () {
-	console.log('Document ready!');
-});
+	$('#add-items').keydown(function(event) {
+		if (event.which == 13) {
+			var item = $(this).val();
+			$('<div>' + item + '</div>').prependTo('.shopping-list').addClass('need');
+			$('#add-items').val('');
+		}
+	});
+})
