@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<meta charset="UTF-8">
 	<title>Shopping Buddy</title>
 </head>
@@ -13,14 +14,14 @@
 		<div class="app">
 			<div class="head">
                 <h1>Shopping Buddy</h1>
-                <p>Start typing an item on your shopping list and press 'enter' to add it!</p>
 			</div>
 
 			<div class="main">
 				<div class="top-content">
 					<div class="item-entry">
+						<input id="add-items" type="text" placeholder="What do you want to add to your list?">
                         <div class="shopping-list">
-                            <div class="done">Milk</div>
+                            <div class="need">Milk</div>
                             <div class="need">Oranges</div>
                             <div class="options"><!--mousedown to trigger event(done, delete, edit), default=hidden-->
                             	<div class="edit"></div>

@@ -44,8 +44,18 @@ html, body {
 	text-align: left;
 }
 
-.shopping-list div {
-	margin-top: 5px;
+.top-content div {
+	margin-top: 3px;
+}
+
+#add-items {
+    background: none;
+    border: none;
+    font-size: 1em;
+    color: #7D7F7E;
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 5px;
 }
 
 .need {
@@ -68,6 +78,7 @@ html, body {
 }
 
 .options {
+	display: none;
 	float: right;
 	height: 30px;
 	width: 90px;
@@ -97,7 +108,9 @@ html, body {
 }
 
 .bottom-content {
+	width: 100%;
 	margin-top: 20px;
+	padding-left: 25px;
 }
 
 .bottom-content p {
