@@ -66,6 +66,12 @@ html, body {
 	padding: 5px 0px 5px 30px;
 }
 
+.need input[type="text"] {
+	display: none;
+	outline: none;
+	background-color: #F9FFFB;
+}
+
 .done {
 	background-color: #ADFFCC;
 	color: #567F66;
