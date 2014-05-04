@@ -14,38 +14,47 @@ $(document).ready(function () {
 				"<span id=\"item\">" + value + "</span>" +
 				"<input type=\"text\" val=\"" + value + "\">" +
 				"</div>");
-			new_item.prependTo('.shopping-list').addClass('need');
+			new_item.prependTo('.shopping-list').addClass('need').attr('id','items');
+			var options = $(
+	            "<div class=\"options\">" +
+	            "<div class=\"edit\"><a href=\"#\"></a></div>" +
+                "<div class=\"check\"><a href=\"#\"></a></div>" +
+                "<div class=\"delete\"><a href=\"#\"></a></div>" +
+                "</div>");
+			options.appendTo('#items');
 			
 			// reset value for next item
 			$(this).val('');
 		}
 	});
-	$('.edit').on("mouseenter mouseleave", ".need", function() { $(this).find(".options").toggle(); });
-	$('.edit').on('click', editItem);
+
+	$(".edit").on("click", onClick);
+	$(".edit").on("click", "a", function(event) {
+		event.stopPropagation();
+	});
 	// $('#check').on('click', checkItem);
 	// $('#delete').on('click', deleteItem);
 });
 
-function editItem(event) {
 
-	// Called when the pencil icon is clicked next to shopping list item
-	function onClick() {
 
-		var span = $(this).find('span');
-		var input = $(this).find('input[type=text]');
+// Called when the pencil icon is clicked next to shopping list item
+function onClick(event) {
 
-		span.hide();
-		input.show().focus();
-	};
+	var span = $(this).find('span');
+	var input = $(this).find('input[type=text]');
 
-	// Receives new input and makes changes to span
-	function handleEdit() {
+	span.hide();
+	input.show().focus();
+}
 
-		var input = $(this);
-		var span = input.siblings("span");
+// Receives new input and makes changes to span
+function handleEdit() {
 
-		input.hide();
-		span.text(input.val());
-		span.show();
-	};
+	var input = $(this);
+	var span = input.siblings("span");
+
+	input.hide();
+	span.text(input.val());
+	span.show();
 }
