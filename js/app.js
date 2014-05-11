@@ -1,7 +1,16 @@
 $(document).ready(function () {
 	// Add new items by taking val of input on keydown of the enter button and prepend to the shopping list div
-	$('#add-items').keydown(function(event) {
-		if (event.which == 13) {
+	$('#add-items').keydown(addItem);
+
+	$(".edit").on("click", "button", editStart);
+	// $('#check').on('click', checkItem);
+	// $('#delete').on('click', deleteItem);
+});
+
+function addItem(event) {
+	var input = $('#add-items');
+
+	if (event.which == 13) {
 			// get value from input
 			var value = $(this).val();
 			
@@ -17,31 +26,22 @@ $(document).ready(function () {
 			new_item.prependTo('.shopping-list').addClass('need').attr('id','items');
 			var options = $(
 	            "<div class=\"options\">" +
-	            "<div class=\"edit\"><a href=\"#\"></a></div>" +
-                "<div class=\"check\"><a href=\"#\"></a></div>" +
-                "<div class=\"delete\"><a href=\"#\"></a></div>" +
+	            "<a href=\"#\" class=\"button\"><span class=\"edit\"></span></a>" +
+                "<a href=\"#\" class=\"button\"><span class=\"check\"></span></a>" +
+                "<a href=\"#\" class=\"button\"><span class=\"delete\"></span></a>" +
                 "</div>");
 			options.appendTo('#items');
 			
 			// reset value for next item
 			$(this).val('');
-		}
-	});
-
-	$(".edit").on("click", onClick);
-	$(".edit").on("click", "a", function(event) {
-		event.stopPropagation();
-	});
-	// $('#check').on('click', checkItem);
-	// $('#delete').on('click', deleteItem);
-});
-
-
+	};
+}
 
 // Called when the pencil icon is clicked next to shopping list item
-function onClick(event) {
+function editStart() {
 
-	var span = $(this).find('span');
+
+	var span = $(this).closest('.need')
 	var input = $(this).find('input[type=text]');
 
 	span.hide();
@@ -49,7 +49,7 @@ function onClick(event) {
 }
 
 // Receives new input and makes changes to span
-function handleEdit() {
+function editFinish() {
 
 	var input = $(this);
 	var span = input.siblings("span");

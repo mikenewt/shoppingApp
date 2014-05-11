@@ -83,12 +83,11 @@ html, body {
 }
 
 .options {
-	display: inline-block;
+	display: none;
 	float: right;
 	height: 30px;
 	width: 90px;
 	margin-right: 15px;
-	/*padding-top: 10px;*/
 }
 
 .edit, .check, .delete {
