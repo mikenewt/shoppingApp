@@ -1,0 +1,176 @@
+html, body {
+	background-color: #a4dfff;
+	height: 100%;
+}
+
+.head, .need, .done, .bottom-content, #add-items {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.app {
+	height: 200px;
+	padding-top: 50px;
+}
+
+.head {
+	width: 100%;
+	text-align: center;
+}
+
+.head h1 {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.head p {
+	margin-top: 10px;
+}
+
+.main {
+	position: relative;
+	margin: 0px auto;
+	width: 400px;
+	margin-top: 35px;
+}
+
+.top-content {
+	width: 100%;
+	text-align: left;
+}
+
+.top-content div {
+	margin-top: 3px;
+}
+
+#add-items {
+	background: none;
+    border: none;
+    font-size: 1em;
+    color: #7D7F7E;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.need {
+	background-color: #F9FFFB;
+	color: #7D7F7E;
+	border: solid 2px gray;
+	border-radius: 5px;
+	line-height: 30px;
+	padding: 5px 0px 5px 30px;
+}
+
+.need input[type="text"] {
+	display: none;
+	outline: none;
+	background-color: #F9FFFB;
+}
+
+.done {
+	background-color: #ADFFCC;
+	color: #567F66;
+	font-style: italic;
+	border: solid 2px gray;
+	border-radius: 5px;
+	line-height: 30px;
+	padding: 5px 0px 5px 30px;
+}
+
+.options {
+	display: none;
+	float: right;
+	height: 30px;
+	width: 90px;
+	margin-right: 15px;
+}
+
+.edit, .check, .delete {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-right: 10px;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+}
+
+.edit {
+	background-image: url('../images/pencil.png');
+}
+
+.check {
+	background-image: url('../images/checkmark.png');
+}
+
+.delete {
+	background-image: url('../images/remove2.png');
+}
+
+.bottom-content {
+	width: 100%;
+	margin-top: 20px;
+	padding-left: 25px;
+}
+
+.bottom-content p {
+	display: inline-block;
+}
+
+.export, .send {
+	/*border: solid 1px black;*/
+	display: inline-block;
+	width: 170px;
+	height: 30px;
+	margin: 0px 10px 0 10px;
+}
+
+.export {
+	margin-left: 15px;
+}
+
+.pdf, .excel, .text, .word, .facebook, .twitter, .gplus, .email {
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	background-size: 16px 16px;
+	padding-right: 5px;
+}
+
+.pdf {
+	background-image: url('../images/file-pdf.png');
+	margin-left: 5px;
+}
+
+.excel {
+	background-image: url('../images/file-excel.png');
+}
+
+.word {
+	background-image: url('../images/file-word.png');
+}
+
+.text {
+	background-image: url('../images/file.png');
+}
+
+.facebook {
+	background-image: url('../images/facebook.png');
+}
+
+.twitter {
+	background-image: url('../images/twitter.png');
+}
+
+.gplus {
+	background-image: url('../images/google-plus.png');
+}
+
+.email {
+	background-image: url('../images/mail2.png');
+}
